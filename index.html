@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="js/script.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="img/revou1.png" alt="Logo" class="w-8 h-8 rounded-full" />
+        <div class="text-2xl font-bold text-purple-400">Website Portfolio</div>
+      </div>
+      <nav class="space-x-4">
+        <a href="#home" class="text-gray-300 hover:text-purple-400">Home</a>
+        <a href="#profile" class="text-gray-300 hover:text-purple-400">Our Profile</a>
+        <a href="#portfolio" class="text-gray-300 hover:text-purple-400">Portfolio</a>
+        <a href="#contact" class="text-gray-300 hover:text-purple-400">Message Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="py-16 text-center bg-gray-900">
+    <h1 id="greeting" class="text-4xl font-bold text-purple-400 mb-3">Hai Kamu :)</h1>
+    <p class="text-gray-400">Perkenalkan, namaku Fawwaz. Saya adalah mahasiswa aktif di UPN "VETERAN" JAWA TIMUR</p>
+    <div class="mt-10">
+      <img src="img/fwzhero.png"
+           alt="Hero Image"
+           class="w-full h-auto md:max-h-[500px] object-contain rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section id="profile" class="py-16 bg-gray-800">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-blue-400">Our Headquarter</h2>
+    </div>
+    <div class="flex justify-center gap-8 flex-wrap">
+      <div class="flex flex-col items-center">
+        <div class="w-24 h-24 rounded-full border-4 border-purple-500 mb-2"></div>
+        <p class="text-gray-300">Jakarta</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-24 h-24 rounded-full border-4 border-purple-500 mb-2"></div>
+        <p class="text-gray-300">Bandung</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-24 h-24 rounded-full border-4 border-purple-500 mb-2"></div>
+        <p class="text-gray-300">Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 bg-gray-900">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-purple-400">Portfolio</h2>
+      <p class="text-gray-400">Beberapa project yang pernah saya kerjakan</p>
+    </div>
+  
+    <div class="flex flex-wrap justify-center gap-6 px-6">
+  
+      <!-- KlinikIn Web App -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-4 w-full md:w-1/3">
+        <img src="img/klinikin-web.png" alt="KlinikIn Web" class="rounded mb-3" />
+        <h3 class="text-xl font-semibold text-purple-400">KlinikIn – Web Booking Klinik</h3>
+        <p class="text-gray-300 text-sm mt-2 mb-4">
+          Aplikasi berbasis Laravel untuk reservasi klinik, manajemen layanan, dan informasi dokter secara online.
+        </p>
+        <a href="https://drive.google.com/file/d/1e2W0Igw_kibEyNwciMbcLg7uslKAIEtT/view?usp=sharing" target="_blank" class="inline-block text-blue-400 hover:underline">Lihat Dokumen Laporan</a>
+      </div>
+  
+      <!-- Project Plan -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-4 w-full md:w-1/3">
+        <img src="img/klinikin-plan.png" alt="Project Plan" class="rounded mb-3" />
+        <h3 class="text-xl font-semibold text-purple-400">Manajemen Proyek KlinikIn</h3>
+        <p class="text-gray-300 text-sm mt-2 mb-4">
+          Dokumen project plan berisi scope, WBS, timeline, risiko, dan stakeholder selama pengembangan KlinikIn.
+        </p>
+        <a href="https://drive.google.com/file/d/1up6SuB_ghgLcOe3Ykl0spZLdx5RncLmu/view?usp=drive_link" target="_blank" class="inline-block text-blue-400 hover:underline">Lihat Detail Project</a>
+      </div>
+  
+      <!-- UI/UX Figma -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-4 w-full md:w-1/3">
+        <img src="img/klinikin-uiux.png" alt="KlinikIn UI/UX" class="rounded mb-3" />
+        <h3 class="text-xl font-semibold text-purple-400">KlinikIn – UI/UX Mobile App</h3>
+        <p class="text-gray-300 text-sm mt-2 mb-4">
+          Prototipe Figma untuk aplikasi mobile KlinikIn, dengan alur reservasi yang modern dan user-friendly.
+        </p>
+        <a href="https://www.figma.com/proto/yFHNYamk9KTsrUZpxvOxTC/Klinikin-PEMMOB-1?node-id=0-1&t=gq7parLSSzzuttxW-1" target="_blank" class="inline-block text-blue-400 hover:underline">Lihat di Figma</a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Message Us -->
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-blue-400">Message Us</h2>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+      <!-- Form -->
+      <form id="contactForm" class="md:w-1/2 space-y-4">
+        <div>
+          <label for="name" class="block text-gray-300">Nama</label>
+          <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 px-3 py-2 rounded text-white" required />
+        </div>
+        <div>
+          <label for="birthdate" class="block text-gray-300">Tanggal Lahir</label>
+          <input type="date" id="birthdate" class="w-full bg-gray-700 border border-gray-600 px-3 py-2 rounded text-white" required />
+        </div>
+        <div>
+          <label class="block text-gray-300">Jenis Kelamin</label>
+          <div class="flex gap-4 text-gray-200">
+            <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-gray-300">Pesan</label>
+          <textarea id="message" class="w-full bg-gray-700 border border-gray-600 px-3 py-2 rounded text-white" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="bg-gradient-to-r from-purple-600 to-blue-700 text-white px-6 py-2 rounded-full shadow-md hover:opacity-90 transition">
+          Submit
+        </button>
+      </form>
+
+      <!-- Result -->
+      <div class="md:w-1/2 border border-gray-700 p-4 bg-gray-700 text-gray-100 rounded-lg" id="formResult">
+        <p class="font-semibold">result</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-4 mt-12 text-center border-t border-gray-700 text-sm text-gray-500">
+    Created by fawwazdh | © 2025
+  </footer>
+
+</body>
+</html>
